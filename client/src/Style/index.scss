@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  min-height: 100%;
+  position: relative;
+}
+
+code {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.Container{
+  max-width: 1370px;
+  margin: 0 auto;
+}
+
+
+.Loadding{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  z-index: 100000;
+  object-fit: cover;
+}
+
+
+.itemSarch{
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  .info{
+    img{
+      width: 30px;
+      margin-right: 10px;
+    }
+    span{
+      margin-right: 10px;
+    }
+  }
+
+  &:hover{
+    opacity: 0.5
+  }
+}
+
+.btn{
+  background: #811811
+}
+
+
+
+@import './Navbar.scss';
+@import './Media.scss';
